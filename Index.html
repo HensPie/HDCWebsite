@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <meta name="description" content="Hens Data Consulting Master Data Management MDM Data Quality DQ Data Engineering Data Governance DG Consulting Services ">
+              <meta name="author" content="Pieter Hens">
+              <meta name="generator" content="v0.1">
+              <title>Hens Data Consulting</title>
+
+
+              
+              <link href="./css/style.css" rel="stylesheet">             <!-- main css -->
+              <link href="./css/bootstrap.min.css" rel="stylesheet">     <!-- Bootstrap core CSS -->
+              <link href="./css/sidebars.css" rel="stylesheet">          <!-- sidebar -->
+              <link href="./css/Carousel.css" rel="stylesheet">          <!-- sidebar -->
+
+
+            <!-- icons sidebar -->
+
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+              <symbol id="home" viewBox="0 0 16 16">
+                <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+              </symbol>
+              <symbol id="speedometer2" viewBox="0 0 16 16">
+                <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+                <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+              </symbol>
+              <symbol id="table" viewBox="0 0 16 16">
+                <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+              </symbol>
+              <symbol id="people-circle" viewBox="0 0 16 16">
+                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+              </symbol>
+              <symbol id="grid" viewBox="0 0 16 16">
+                <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+              </symbol>
+            </svg>
+
+            <!-- end icons sidebar -->
+    
+  </head>
+  
+
+  <body>
+
+
+
+        <!-- MENU BAR -->
+        <div class="site-header sticky-top">
+            <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <a href="index.html" class="navbar-brand">Hens Data Consulting</a>
+                        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarCollapse">
+                            <div class="navbar-nav">
+                                <a href="Index.html" class="nav-item nav-link active">Home</a>
+                                <a href="Curriculum.html" class="nav-item nav-link">Curriculum</a>
+                                <a href="#" class="nav-item nav-link disabled" tabindex="-1">Offering</a>
+                            </div>
+                            <div class="navbar-nav ms-auto">
+                                <a href="#" class="nav-item nav-link">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                  </nav>
+            </div>
+            </div>
+
+
+        <!-- END MENU BAR-->
+
+        <!-- Base Offering -->
+              <div class="py-5 site-header rounded-3">
+                <div class="container-fluid py-5">
+                <div class="row">
+                  <div class="col-sm-8">
+                  <h1><p class="text-light py-5">Enabling Organizations to leverage the data that matters</p></h1>
+                    <p class="lead">
+                      <ul class="text-light py-2">
+                          <li>Providing organizations with strategic advice to get control over their data assets.</li>  
+                          <li>Get access to the right data at the right time</li>  
+                          <li>Design and develop Quality and MDM solutions fit for your Organization's strategic growth </li>  
+                          <li>Create Business processes by leveraging DATA that matters for your Organization to rely on! </li>  
+                      </ul>
+                    </p>
+                </div>
+                <div class="col-sm-4 py-5">
+                  <div class="row"><p class="text-center"><img src="./images/Icons/B-Knot.png" alt="siteLogo" class="img-fluid"></p></div>
+                </div>
+
+                </div>
+              </div>
+              </div>
+            
+            
+            </div>     
+          
+            <div class="container-fluid p-5 my-5">
+              <!--    <h1>Offering</h1>    -->              
+
+
+              
+                <div class="row">
+                  <p class="h1 py-5">Increase Performance and Insights within any Data Landscape</p>
+                  <div class="col-md-4">
+                    <div class="row"><h2><p class="text-center">Data Quality</p></h2></div>
+                    <div class="row"><p class="text-center"><img src="./images/Icons/QualityDashboard1.png" alt="DQ" class="icon"></p></div>
+                    <div class="row"><p>Experts in the Design, Development and Governance of compliant frameworks. Our DQ Framework encompasses Data Quality Analysis, Cleansing Strategy, Quality Improvements and Continuous Monitoring in Data Quality Dashboards.</p></div>
+                 </div>
+
+                  <div class="col-md-4">
+                    <div class="row"><h2><p class="text-center">Data Centricity</p></h2></div>
+                    <div class="row"><p class="text-center"><img src="./images/Icons/MDM.png" alt="MDM" class="icon"></p></div>
+                    <div class="row"><p>Our core expertise revolving around Implementing and Governing an organization wide one-stop-shop for the data that matters. We master the Creation and Distribution of a Golden Profile - generating reusable data assets and valuable insights for your organization. </p></div>
+                 </div>
+
+                  <div class="col-md-4">
+                    <div class="row"><h2><p class="text-center">Data Enablement</p></h2></div>
+                    <div class="row"><p class="text-center"><img src="./images/Icons/DataStrategy.png" alt="DST" class="icon"></p></div>
+                    <div class="row"><p>Empowering the people and processes in your organization with the data that matters on a timely basis provides for a serious advantage over competitors. We Classify, Distribute, Educate and Support organizations in our tool-agnostic ways and methods to reach success.
+                 </div>
+                </div>
+
+                <p class="h1 py-5">Reduce costs and increase efficiency</p>
+
+         
+        
+
+        <!-- end Base Offering -->
+
+
+        <!-- Capabilities -->
+         <div class="container-fluid p-5 py-5">
+
+
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-3 py-3 ">
+
+            <div class="col d-flex align-items-start">
+              <img src="./images/Icons/BW-DQProfile.png" alt="MDM" class="list-icon me-3">
+              <div>
+                <h4 class="fw-bold mb-0">Quality Framework</h4>
+                <p>Every capability and competence in order to measure and remediate Data Quality Issues.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <img src="./images/Icons/BW-CustomerCentricity.png" alt="MDM" class="list-icon me-3">
+              <div>
+                <h4 class="fw-bold mb-0">Customer 360°</h4>
+                <p>Enabling the journey from Customer Data to Customer Intelligence. </p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <img src="./images/Icons/BW-Roadmap1.png" alt="MDM" class="list-icon me-3">
+              <div>
+                <h4 class="fw-bold mb-0">Solution Architecture</h4>
+                <p>Design of an Data solutions fit for your organization</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <img src="./images/Icons/BW-King.png" alt="MDM" class="list-icon me-3">
+              <div>
+                <h4 class="fw-bold mb-0">From Data to Insights</h4>
+                <p>Expertise to leverage on your data and leverage insights for business driven decision making</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <img src="./images/Icons/BW-DQDimensions.png" alt="DQDim" class="list-icon me-3">
+              <div>
+                <h4 class="fw-bold mb-0">Quality Dimensions</h4>
+                <p>Customize Quality Dimensions and structure your data measurements to them.</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <img src="./images/Icons/BW-MDMDeduplication.png" alt="DQDim" class="list-icon me-3">
+              <div>
+                <h4 class="fw-bold mb-0">Deduplication</h4>
+                <p>Operational or Analytical deduplication and distribution of your data</p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <img src="./images/Icons/BW-Governance.png" alt="DQDim" class="list-icon me-3">
+              <div>
+                <h4 class="fw-bold mb-0">Infuse with Governance</h4>
+                <p>Pragmatically infuse a DQ and MDM program with Data Governance. </p>
+              </div>
+            </div>
+            <div class="col d-flex align-items-start">
+              <img src="./images/Icons/BW-DrivingChange.png" alt="DQDim" class="list-icon me-3">
+              <div>
+                <h4 class="fw-bold mb-0">Driving Change</h4>
+                <p>A no nonsense approach towards driving change in your Data Program</p>
+              </div>
+            </div>
+
+            <!-- End Capabilities -->
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container-fluid my-5">
+      <div class="col-md-12 text-center">
+          <a href="./Curriculum.html"button type="button" class="btn btn-lg btn-success">Get in touch</button></a>
+      </div>
+  </div>
+
+  </div>
+
+
+
+
+</div>
+
+
+
+
+
+  </body>
+
+  <footer class="container-fluid py-5">
+    <div class="row">
+      <div class="col-12 col-md">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mb-2" role="img" viewBox="0 0 24 24"><title>Logo</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
+        <small class="d-block mb-3 text-muted">&copy; Hens Data Consulting </small>
+      </div>
+      <div class="col-6 col-md">
+        
+         <h5>Features</h5> 
+        <!--
+         <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Cool stuff</a></li>
+          <li><a class="link-secondary" href="#">Random feature</a></li>
+          <li><a class="link-secondary" href="#">Team feature</a></li>
+          <li><a class="link-secondary" href="#">Stuff for developers</a></li>
+          <li><a class="link-secondary" href="#">Another one</a></li>
+          <li><a class="link-secondary" href="#">Last time</a></li>
+        </ul>
+        -->
+      </div>
+      <div class="col-6 col-md">
+        
+        <h5>Offering</h5>
+        
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="#">Master Data Management</a></li>
+          <li><a class="link-secondary" href="#">Data Quality</a></li>
+          <li><a class="link-secondary" href="#">Data Engineering</a></li>
+          <li><a class="link-secondary" href="#">Data Architecture</a></li>
+        </ul>
+      
+      </div>
+      <div class="col-6 col-md">
+        
+        <h5>Resources</h5>
+        
+        <ul class="list-unstyled text-small">
+        <!--
+          <li><a class="link-secondary" href="#">Business</a></li>
+          <li><a class="link-secondary" href="#">Education</a></li>
+          <li><a class="link-secondary" href="#">Government</a></li>
+        -->
+          <li><a class="link-secondary" href="https://www.flaticon.com/authors/becris">Becris - FlatIcon</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md">
+        <h5>About</h5>
+        <ul class="list-unstyled text-small">
+          <li><a class="link-secondary" href="./Curriculum.html">Team</a></li>
+          <!--<li><a class="link-secondary" href="#">Locations</a></li>
+          <li><a class="link-secondary" href="#">Privacy</a></li>
+          <li><a class="link-secondary" href="#">Terms</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/sidebars.js"></script>
+  
+</html>
